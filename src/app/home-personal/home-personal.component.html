@@ -1,0 +1,15 @@
+<div class="home_personal_left">
+    <img src="">
+</div>
+<div class="home_personal_right">
+    <ul *ngFor="let contactItem of contactItems">
+        <li>
+            <p>{{contactItem.title}}:
+                <a *ngIf="contactItem.link!==''" href="{{contactItem.link}}">
+                    <span>{{contactItem.value}}</span>
+                </a>
+                <span *ngIf="contactItem.link===''">{{contactItem.value}}</span>
+            </p>
+        </li>
+    </ul>
+</div>
