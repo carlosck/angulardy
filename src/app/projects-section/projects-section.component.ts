@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectDataItem }from './project-data-item';
+import { CommonCardDataItem }from '../common-card/common-card-data-item';
 @Component({
   selector: 'app-projects-section',
   templateUrl: './projects-section.component.html',
@@ -8,7 +8,7 @@ import { ProjectDataItem }from './project-data-item';
 export class ProjectsSectionComponent implements OnInit {
 
   constructor() { }
-  projectDataItem : ProjectDataItem[]=[
+  projectDataItem : CommonCardDataItem[]=[
     {
       title: 'Dodge Muscle Car',
       link: 'http://dodge.rauluranga.com/muscle',
@@ -34,11 +34,11 @@ export class ProjectsSectionComponent implements OnInit {
       ]
     },
     {
-      title: 'JEEP Histories',
+      title: 'Jeep Histories',
       link: 'https://www.jeepstories.mx/',
       image: 'https://www.rdy.mx/images/nextImageExportOptimizer/jeep_stories-opt-384.WEBP',
       content: [
-        'howler etc ',
+        'In this project I use p5js-FFT  to transform the microphone input in canvas waves to simulate an audio oscillator , using the the parallax effect controlled by the scroll with easing, the circle loading on the audio element whas achieve manipulating the svg path ',
       ]
     },    
 

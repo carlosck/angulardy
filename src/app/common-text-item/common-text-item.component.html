@@ -1,4 +1,4 @@
 <div *ngIf="commonTextItemData">
-    <h3 >{{commonTextItemData.title}}</h3>
+    <h3  class="section_title">{{commonTextItemData.title}}</h3>
     <p *ngFor="let content of commonTextItemData.content" [innerHtml]="content"></p>
 </div>

@@ -1,4 +1,4 @@
-export interface ProjectDataItem{
+export interface CommonCardDataItem{
     title: string;
     link: string;
     image: string,

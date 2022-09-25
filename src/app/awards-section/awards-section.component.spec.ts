@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeContactComponent } from './home-contact.component';
+import { AwardsSectionComponent } from './awards-section.component';
 
-describe('HomeContactComponent', () => {
-  let component: HomeContactComponent;
-  let fixture: ComponentFixture<HomeContactComponent>;
+describe('AwardsSectionComponent', () => {
+  let component: AwardsSectionComponent;
+  let fixture: ComponentFixture<AwardsSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeContactComponent ]
+      declarations: [ AwardsSectionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HomeContactComponent);
+    fixture = TestBed.createComponent(AwardsSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

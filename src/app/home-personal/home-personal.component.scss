@@ -1,0 +1,15 @@
+.home_personal_left{
+    display: flex;
+}
+.home_profile_pic{
+    width: 280px;
+    margin: 0 auto;
+}
+.home_personal_right{
+    @media (min-width: 768px){
+        margin-left: 20px;
+    }
+    @media (min-width: 1024px){
+        margin-left: 50px;
+    }
+}

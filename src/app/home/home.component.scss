@@ -1,0 +1,11 @@
+.home_personal{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px){
+        flex-direction: row;
+    }
+}
+.home_name{
+    font: normal normal 800 37px/69px Cairo;
+    color: white;
+}

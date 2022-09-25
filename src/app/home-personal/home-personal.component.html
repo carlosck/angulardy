@@ -1,15 +1,15 @@
-<div class="home_personal_left">
-    <img src="">
+<div class="home_personal_left">    
+    <img class="home_profile_pic" src="https://rdy.mx/images/profilepic.jpg" alt="carlosseca" srcset="">
 </div>
 <div class="home_personal_right">
-    <ul *ngFor="let contactItem of contactItems">
-        <li>
+    <mat-list *ngFor="let contactItem of contactItems">
+        <mat-list-item>
             <p>{{contactItem.title}}:
                 <a *ngIf="contactItem.link!==''" href="{{contactItem.link}}">
                     <span>{{contactItem.value}}</span>
                 </a>
                 <span *ngIf="contactItem.link===''">{{contactItem.value}}</span>
             </p>
-        </li>
-    </ul>
+        </mat-list-item>
+    </mat-list>
 </div>

@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
   homeData : CommonTextItemData[]=[
     {
-      'title': 'About me',
+      'title': 'Me',
       'content': 
         [
           'Web developer (full stack) with 15+ years of experience.',  

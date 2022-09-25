@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.fullcontainer{
+    background-color: #143D53;
+}
+.stage{
+    width: 320px;
+    margin: 0 auto;
+    padding: 50px 20px;    
+    box-sizing: border-box; 
+
+    @media (min-width: 768px){
+        width: 768px;        
+    }
+    @media (min-width: 1024px){
+        width: 1024px;
+    }
+    @media (min-width: 1440px){
+        width: 1440px;
+    }
+}
+p{
+    font: normal normal 300 20px/37px Cairo;
+    color: #ffffff;
+}
+a{
+    color: #DBE4E0;
+}
+h2.section_header{
+    font: normal normal 800 37px/69px Cairo;
+    color: #ffffff;
+    margin-top: 45px;
+}
+
+h3.section_title{
+    font: normal normal 800 21px/39px Cairo;
+    color: #ffffff;
+    margin-top: 35px;
+}
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    @media (min-width: 1024px){        
+        -webkit-box-pack: start;
+        justify-content: start;
+    }
+    
+}
+.card-item{
+    max-width: 320px;
+    @media (min-width: 768px){
+        max-width: 500px;
+    }
+    @media (min-width: 1024px){
+        flex: 1 0 45%;
+        margin: 20px 15px;
+        max-width: calc(50% - 30px);
+    }
+    
+}
