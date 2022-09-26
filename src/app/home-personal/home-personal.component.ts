@@ -9,6 +9,8 @@ export class HomePersonalComponent implements OnInit {
 
   constructor() { }
   name = 'Carlos Seca';
+  profilePic = 'https://rdy.mx/images/profilepic.jpg';
+  
   contactItems : ContactItem[]= [
     {
       title: 'Mobile',
