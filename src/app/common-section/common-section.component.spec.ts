@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AwardsSectionComponent } from './awards-section.component';
+import { CommonSectionComponent } from './common-section.component';
 
-describe('AwardsSectionComponent', () => {
-  let component: AwardsSectionComponent;
-  let fixture: ComponentFixture<AwardsSectionComponent>;
+describe('CommonSectionComponent', () => {
+  let component: CommonSectionComponent;
+  let fixture: ComponentFixture<CommonSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AwardsSectionComponent ]
+      declarations: [ CommonSectionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AwardsSectionComponent);
+    fixture = TestBed.createComponent(CommonSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

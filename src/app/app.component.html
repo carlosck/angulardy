@@ -1,6 +1,4 @@
 <h1 class="name">{{name}}</h1>
 <app-home></app-home>
 <app-technical-section></app-technical-section>
-<app-projects-section></app-projects-section>
-<app-awards-section></app-awards-section>
-<app-misc-section></app-misc-section>
+<app-common-section *ngFor="let section of sections" [title]="section.title" subtitle={{section.subtitle}} [items]=section.items></app-common-section>

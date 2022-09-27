@@ -1,16 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonCardDataItem }from '../common-card/common-card-data-item';
+import { CommonCardDataItem }from './common-card/common-card-data-item';
 
-@Component({
-  selector: 'app-awards-section',
-  templateUrl: './awards-section.component.html',
-  styleUrls: ['./awards-section.component.scss']
-})
-export class AwardsSectionComponent implements OnInit {
-
-  constructor() { }
-
-  projectDataItem : CommonCardDataItem[]=[
+export const AwardsItems : CommonCardDataItem[]=[
     {
       title: 'Dodge - Muscle Car',
       link: 'https://www.awwwards.com/sites/unleash-the-beast',
@@ -45,8 +35,3 @@ export class AwardsSectionComponent implements OnInit {
     },
 
   ]
-  
-  ngOnInit(): void {
-  }
-
-}

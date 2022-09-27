@@ -9,11 +9,12 @@ import { HomePersonalComponent } from './home-personal/home-personal.component';
 import { TechnicalSectionComponent } from './technical-section/technical-section.component';
 
 import { CommonTextItemComponent } from './common-text-item/common-text-item.component';
-import { ProjectsSectionComponent } from './projects-section/projects-section.component';
+
 import { CommonCardComponent } from './common-card/common-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AwardsSectionComponent } from './awards-section/awards-section.component';
-import { MiscSectionComponent } from './misc-section/misc-section.component';
+
+import { CommonSectionComponent } from './common-section/common-section.component';
+ 
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MiscSectionComponent } from './misc-section/misc-section.component';
     HomePersonalComponent,
     TechnicalSectionComponent,    
     CommonTextItemComponent, 
-    ProjectsSectionComponent, CommonCardComponent, AwardsSectionComponent, MiscSectionComponent
+    CommonCardComponent,
+    CommonSectionComponent
   ],
   imports: [
     BrowserModule,
