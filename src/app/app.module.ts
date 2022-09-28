@@ -14,7 +14,7 @@ import { CommonCardComponent } from './common-card/common-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CommonSectionComponent } from './common-section/common-section.component';
- 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { CommonSectionComponent } from './common-section/common-section.componen
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
