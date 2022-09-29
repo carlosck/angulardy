@@ -13,8 +13,7 @@ export class CommonSectionComponent implements OnInit {
   @Input() subtitle?: string;
   @Input() items?: CommonCardDataItem[];
 
-  ngOnInit(): void {
-    console.log('items',this.items)
+  ngOnInit(): void {    
   }
 
 }

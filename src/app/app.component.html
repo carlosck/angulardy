@@ -1,4 +1,4 @@
 <h1 class="name">{{name}}</h1>
 <app-home></app-home>
 <app-technical-section></app-technical-section>
-<app-common-section *ngFor="let section of sections" [title]="section.title" subtitle={{section.subtitle}} [items]=section.items></app-common-section>
+<app-common-section *ngFor="let section of sections" [title]="section.fields.title" subtitle={{section.fields.subtitle}} [items]=section.fields.cards></app-common-section>

@@ -14,7 +14,9 @@ import { CommonCardComponent } from './common-card/common-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CommonSectionComponent } from './common-section/common-section.component';
-import { HttpClientModule } from '@angular/common/http';
+
+import { ContentfulService } from './contentful.service';
+import { ToHtmlPipe } from './to-html.pipe';
 
 @NgModule({
   declarations: [
@@ -24,16 +26,17 @@ import { HttpClientModule } from '@angular/common/http';
     TechnicalSectionComponent,    
     CommonTextItemComponent, 
     CommonCardComponent,
-    CommonSectionComponent
+    CommonSectionComponent,
+    ToHtmlPipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatListModule,
-    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

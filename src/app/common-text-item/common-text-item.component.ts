@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CommonTextItemData } from './common-text-item-data'
+import { TypeTitleContentListingFields } from '../content-types'
+import { Entry } from 'contentful';
+
 @Component({
   selector: 'app-common-text-item',
   templateUrl: './common-text-item.component.html',
@@ -9,9 +11,9 @@ export class CommonTextItemComponent implements OnInit {
 
   constructor() { }
 
-  @Input() commonTextItemData? : CommonTextItemData;
+  @Input() commonTextItemData? : Entry<TypeTitleContentListingFields>;
   
-  ngOnInit(): void {
+  ngOnInit(): void {    
   }
 
 }

@@ -4,12 +4,8 @@
 <div class="home_personal_right">
     <mat-list *ngFor="let contactItem of contactItems">
         <mat-list-item>
-            <p>{{contactItem.title}}:
-                <a *ngIf="contactItem.link!==''" href="{{contactItem.link}}">
-                    <span>{{contactItem.value}}</span>
-                </a>
-                <span *ngIf="contactItem.link===''">{{contactItem.value}}</span>
-            </p>
+            <p>{{contactItem.fields.title}}:</p>
+            <span [innerHtml]="contactItem.fields.value | toHtml"></span>
         </mat-list-item>
     </mat-list>
 </div>

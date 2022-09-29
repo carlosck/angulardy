@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonTextItemData } from '../common-text-item/common-text-item-data';
+import { TypeTitleContentListingFields } from '../content-types';
+import { ContentfulService } from '../contentful.service';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-home',
@@ -8,39 +10,14 @@ import { CommonTextItemData } from '../common-text-item/common-text-item-data';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-  homeData : CommonTextItemData[]=[
-    {
-      'title': 'Me',
-      'content': 
-        [
-          'Web developer (full stack) with 15+ years of experience.',  
-          'Fluent with HTML, JS, JQuery, CSS for front end and PHP, Node for backend.', 
-          'Knowledgeable with frameworks like: React, Next, WordPress, Laravel',
-          'Plenty of experience with MySQL, NoSQL(MariaDb, Mongo) and Headless CMS like Gatsby, Prep.io.', 
-          'Familiar with Angular, Vue',
-          'Taking freelance in my leisure time.',
-          'Passionate about family, technology and nature.',
-        ],        
-    },
-    {
-      'title': 'Education',
-      'content': 
-        [
-          'Engineer in Computer Science<span> Facultad de Sistemas Universidad Autónoma de Coahuila<span> ',
-        ],  
-    },
-    {
-      'title': 'Languages',
-      'content': 
-        [
-          'Spanish: <span>Native</span>',
-          'English : <span>Working proficiency</span>',
-        ],
-    },
-    
-  ]
-  ngOnInit(): void {
+  constructor(private contentfulService: ContentfulService) { }
+  
+  public homeItems : Entry<TypeTitleContentListingFields>[] = [];
+  
+  ngOnInit() {
+    this.contentfulService.getHome()
+    .then(homeItems => this.homeItems = homeItems)
+    console.log('this.homeItems',this.homeItems)    
   }
 
 }
