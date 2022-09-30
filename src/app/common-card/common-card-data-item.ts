@@ -1,6 +1,6 @@
 export interface CommonCardDataItem{
     title: string;
     link: string;
-    image: string,
+    imageurl: string,
     content: string[];        
 }

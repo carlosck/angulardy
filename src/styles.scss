@@ -66,5 +66,10 @@ h3.section_title{
         margin: 20px 15px;
         max-width: calc(50% - 30px);
     }
+    @media (min-width: 1440px){
+        flex: 1 0 30%;
+        margin: 20px 15px;
+        max-width: calc(30% - 30px);
+    }
     
 }

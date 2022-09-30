@@ -18,7 +18,7 @@ export class HomePersonalComponent implements OnInit {
   public contactItems : Entry<TypeContactListingFields>[] = [];
   
   ngOnInit() {
-    this.contentfulService.getContact()
+    this.contentfulService.getContact({order: 'sys.createdAt'})
     .then(contactItems => this.contactItems = contactItems)    
   }
 

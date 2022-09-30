@@ -15,7 +15,7 @@ export class TechnicalSectionComponent implements OnInit {
 public technicalItems : Entry<TypeTitleContentListingFields>[] = [];
 
   ngOnInit() {
-    this.contentfulService.getTechnical()
+    this.contentfulService.getTechnical({order: 'sys.createdAt'})
     .then(technicalItems => this.technicalItems = technicalItems)
     console.log('this.technicalItems',this.technicalItems)    
   }

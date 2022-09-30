@@ -16,6 +16,14 @@ export interface TypeTitleContentListingFields {
     content?: CFRichTextTypes.Block | CFRichTextTypes.Inline;    
     
 }
+export interface TypeCardListingFields {
+    title?: Contentful.EntryFields.Text;
+    content?: CFRichTextTypes.Block | CFRichTextTypes.Inline;
+    link?: Contentful.EntryFields.Text; 
+    imageurl?: Contentful.EntryFields.Text;
+    
+}
 
 export type TypeContactListing = Contentful.Entry<TypeContactListingFields>;
 export type TypeTitleContentListing = Contentful.Entry<TypeTitleContentListingFields>;
+export type TypeCardListing = Contentful.Entry<TypeCardListingFields>;

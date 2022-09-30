@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Entry } from 'contentful';
+import { environment } from '../environments/environment';
+
 import { TypeContactListingFields, TypeTitleContentListingFields } from './content-types';
 const CONFIG = {
   space: '9u9xxi5g73b9',

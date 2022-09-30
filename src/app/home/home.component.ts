@@ -15,9 +15,9 @@ export class HomeComponent implements OnInit {
   public homeItems : Entry<TypeTitleContentListingFields>[] = [];
   
   ngOnInit() {
-    this.contentfulService.getHome()
+    this.contentfulService.getHome({order: 'sys.createdAt'})
     .then(homeItems => this.homeItems = homeItems)
-    console.log('this.homeItems',this.homeItems)    
+    
   }
 
 }
