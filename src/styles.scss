@@ -16,8 +16,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     img{
         display: block;
         width: 100vw;
-        height: 100vh;
-        object-fit: cover; /* or object-fit: contain; */
+        height: 100vh;        
     }
 }
 .stage{
@@ -109,6 +108,7 @@ h3.section_title{
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
+    align-items: baseline;
 
     @media (min-width: 1024px){        
         -webkit-box-pack: start;
@@ -132,6 +132,7 @@ h3.section_title{
         flex: 1 0 30%;
         margin: 20px 15px;
         width: calc(30% - 30px);
+        max-width: calc(30% - 30px);
         
     }
     
