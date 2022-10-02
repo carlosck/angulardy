@@ -4,6 +4,6 @@
             <mat-card-title>{{data.fields.title}}</mat-card-title>
         </mat-card-header>
         <img mat-card-image src="{{data.fields.imageurl}}" alt="{{data.fields.title}}" srcset="">
-        <mat-card-content [innerText]="data.fields.content"></mat-card-content>
+        <mat-card-content [innerHtml]="data.fields.content | toHtml"></mat-card-content>
     </mat-card>
 </a>

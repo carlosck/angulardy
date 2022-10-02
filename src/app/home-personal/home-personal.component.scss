@@ -6,10 +6,25 @@
     margin: 0 auto;
 }
 .home_personal_right{
+    p{
+        margin-right: 15px;
+    }
     @media (min-width: 768px){
         margin-left: 20px;
     }
     @media (min-width: 1024px){
         margin-left: 50px;
     }
+    
+    
 }
+.home_personal_right_content{
+    font: normal normal 300 20px/22px Cairo;
+}
+.home_personal_right_content {
+    p{
+        font: normal normal 300 20px/22px Cairo;
+    }
+    
+}
+

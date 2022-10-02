@@ -5,7 +5,7 @@
     <mat-list *ngFor="let contactItem of contactItems">
         <mat-list-item>
             <p>{{contactItem.fields.title}}:</p>
-            <span [innerHtml]="contactItem.fields.value | toHtml"></span>
+            <div class="home_personal_right_content"[innerHtml]="contactItem.fields.value | toHtml"></div>
         </mat-list-item>
     </mat-list>
 </div>
