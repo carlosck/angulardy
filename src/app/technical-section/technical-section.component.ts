@@ -16,8 +16,7 @@ public technicalItems : Entry<TypeTitleContentListingFields>[] = [];
 
   ngOnInit() {
     this.contentfulService.getTechnical({order: 'sys.createdAt'})
-    .then(technicalItems => this.technicalItems = technicalItems)
-    console.log('this.technicalItems',this.technicalItems)    
+    .then(technicalItems => this.technicalItems = technicalItems)       
   }
 
 }

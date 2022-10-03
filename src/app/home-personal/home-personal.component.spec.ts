@@ -24,8 +24,7 @@ describe('HomePersonalComponent', () => {
   
   it('should render profile pic',  waitForAsync(() => {    
     const compiled = fixture.debugElement.nativeElement;
-    console.log('compiled',compiled)
-        
+            
     expect(compiled.querySelector('.home_personal_left img').src).toContain(component.profilePic);
   }));
 

@@ -11,7 +11,7 @@ export class CommonCardComponent implements OnInit {
   constructor() { }
   @Input() data?: TypeCardListing;
   ngOnInit(): void {
-    console.log('data',this.data)
+    
   }
 
 }
